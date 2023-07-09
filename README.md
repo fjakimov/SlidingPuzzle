@@ -9,10 +9,13 @@ Sliding puzzle with 3 levels
 При стартување на апликацијата на почетниот прозорец ќе ви биде побарано да изберете тежина на која сакате да ја играте играта
 ![Home](https://github.com/fjakimov/SlidingPuzzle/assets/125222930/f3aad6d2-5771-4248-8dfa-7d3e10926bfb)
 - Easy
+  
   ![Easy](https://github.com/fjakimov/SlidingPuzzle/assets/125222930/5392cfa7-2f26-4e57-91f5-46bab1be8d20)
 - Medium
+  
   ![Medium](https://github.com/fjakimov/SlidingPuzzle/assets/125222930/71f0d9a6-41e5-4c7f-a99d-c98b43746d33)
 - Impossible
+  
   ![Impossible](https://github.com/fjakimov/SlidingPuzzle/assets/125222930/7ff427db-429a-46c7-ba64-2ff40864da5e)
 Правилата за игра се едноставни имате едно жолто квадратче кое се поместува со кликање на неговите соседи.Соседи на жолтото квадратче се сметаат само квадратчињата позади, пред, под и над него.Дијагоналните квадратчиња не се сметаат за соседи и истите неможе да ги поместувате.
 
@@ -47,6 +50,31 @@ Sliding puzzle with 3 levels
 - Методот AddImages() претставува главниот метод за додавање на сликичките во GroupBox-от.Ја земам сликата Bitmap tempBitmap = new Bitmap(MainBitmap, new Size(390, 390));
 со големина 390x390 и го повикувам методот CropImage каде што ја сечкам сликата и со помош на for циклус ги распоредувам на елементите од picture box листата.И на крај ја ставам и целосната слика како позадина во друг GroupBox за корисникот да може да ја гледа истата додека решава.
 ![AddImages](https://github.com/fjakimov/SlidingPuzzle/assets/125222930/dc92f29d-7bd5-4e50-8c16-ab2104408f7c)
+
+3.3 File->Open, File->New, File->Save
+
+Апликацијата и е овозможено за почнување од ново при кликање на File->New.Со сериализација се обидував да ја зачувам играта но добивав еxception при конверзија на json стринг така да сеуште неможе да се зачува прогресот но во наредниот update сигурен сум проблемот ќе биде решен. За таа потреба чувам и класа наречена ProcessData каде што го update-ирам моменталниот прогрес.
+
+1.File->Open
+
+![FileOpen](https://github.com/fjakimov/SlidingPuzzle/assets/125222930/3c36f595-4390-407e-896a-27519cbb75db)
+
+2.File->New
+
+![FileNew](https://github.com/fjakimov/SlidingPuzzle/assets/125222930/2dd060ca-50a4-4c9b-8ca0-833dbd951937)
+
+3.File->Save
+
+![FileSave](https://github.com/fjakimov/SlidingPuzzle/assets/125222930/0275779b-c0aa-4bf2-949f-0a307f400841)
+
+Класата ProcessData
+
+![ProcesData](https://github.com/fjakimov/SlidingPuzzle/assets/125222930/b970f043-b3af-43f0-baae-dd2e7df6c1c1)
+
+
+
+
+
 
 
 
